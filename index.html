@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Video Test</title>
-    <meta name="description" content="360 Video">
-    <script src="../../../dist/aframe.js"></script>
+    <title>Hello, World! • A-Frame</title>
+    <meta name="description" content="Hello, World! • A-Frame">
+    <script src="aframe/aframe.js"></script>
+   
   </head>
   <body>
-    <a-scene>
-      <a-assets>
-        <video id="video" src="quarantine.mp4"
-               autoplay loop crossorigin></video>
-      </a-assets>
+    <div style="width: 400px;">
+      
+      <a-scene>
+        <a-sky src="Cafe 360.jpg" rotation="0 -130 0"></a-sky>
+      </a-scene>
 
-      <a-videosphere src="#video" rotation="0 -130 0"></a-videosphere>
-    </a-scene>
+    </div>
   </body>
 </html>
