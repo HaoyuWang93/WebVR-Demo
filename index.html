@@ -5,15 +5,21 @@
     <title>Haoyu Cafe</title>
     <meta name="description" content="Haoyu Cafe">
     <script src="aframe/aframe.js"></script>
-   
-  </head>
-  <body>
-    <div style="width: 400px;">
-      
-      <a-scene>
-        <a-sky src="Cafe 360.jpg" rotation="0 -130 0"></a-sky>
-      </a-scene>
 
-    </div>
+  <body>
+    <a-scene>
+      <!-- Asset Management System -->
+      <a-assets>
+        <video id="quarantine" src="quarantine.mp4" autoplay></video>
+      </a-assets>
+
+      <!-- Camera -->
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+
+      <!-- 360° Video -->
+      <a-videosphere src="#quarantine" rotation="0 45 0"></a-videosphere>
+    </a-scene>
   </body>
 </html>
