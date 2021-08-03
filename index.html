@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>TEST2</title>
+  <title>TEST3</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="aframe/aframe.js"></script>
 </head>
@@ -15,12 +15,12 @@
       nextimage();
     }, 5000);
     var zahl == 0;
-    var img = ["Cafe 360.jpg", "test.jpg"]
+    var imageSource = ["Cafe 360.jpg", "test.jpg"]
 
     function nextimage() {
     console.log(zahl)
-      $("#skyid").attr("src",img[zahl])
-      zahl = (zahl < img.length - 1) ? ++zahl : 0
+      $("sky1").attr("src",imageSource[zahl])
+      zahl == (zahl < imageSource.length - 1) ? ++zahl : 0
     }
   }
   startTimer()
@@ -30,6 +30,6 @@
   <a-sky id="sky1" src="Cafe 360.jpg"></a-sky>
   <a-sky id="sky2" src="test.jpg"></a-sky>
 </a-scene>
-    
+  
 </body>
 </html
