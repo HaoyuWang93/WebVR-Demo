@@ -2,38 +2,40 @@
 <!doctype html>
 <html>
 <head>
-  <title>TEST4</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>TEST5</title>
   <script src="aframe/aframe.js"></script>
 </head>
 
 <body>
-    
-<script type = "text/javascript">
-  function startTimer() {
-    setInterval(function() {
-      nextimage();
-    }, 3000);
-    var zahl == 0;
 
-    function nextimage() {
-if (zahl == 0) {
-       $("#skyid").attr("src","sky1");
-       zahl ++;
-     }
-     if (zahl == 1) {
-       $("#skyid").attr("src","sky2");  
-       zahl ++;
-     }
-     if (zahl == 2) {
-       zahl == 0;
-     }
-     }
-   }
-  </script>   
+<script>
+  AFRAME.registerComponent("foo", {
+    init: function() {
+      var self = this.el
+      var fadeInAnim = document.querySelector("#fadein-animation")
+      var fadeOutAnim = document.querySelector("#fadeout-animation")
+			var images = ["Cafe 360.jpg","test.jpg"]
+      var switchflip = 1
+      fadeOutAnim.addEventListener("animationend", (e) => {
+        self.setAttribute("material", "src", images[switchflip])
+        switchflip = switchflip === 1 ? 0 : 1
+        self.emit('fadein')
+      })
+      fadeInAnim.addEventListener("animationend", (e) => {
+        self.emit('fadeout')
+      })
+      setTimeout(function() {
+        self.emit('fadeout')
+      }, 1000)
+    }
+  })
+
+</script>
 <a-scene>
-  <a-sky id="sky1" src="Cafe 360.jpg"></a-sky>
-  <a-sky id="sky2" src="test.jpg"></a-sky>
+  <a-sky material="opacity:1; src: https://i.imgur.com/wjobVTN.jpg" foo>
+    <a-animation id="fadeout-animation" attribute="material.opacity" dur="1000" direction="forward" from="1" to="0" begin="fadeout"></a-animation>
+    <a-animation id="fadein-animation" attribute="material.opacity" dur="1000" direction="forward" from="0" to="1" begin="fadein"></a-animation>
+  </a-sky>
 </a-scene>
   
 </body>
