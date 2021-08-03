@@ -2,39 +2,43 @@
 <!doctype html>
 <html>
 <head>
-  <title>A-Frame Switch Scenes</title>
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+  <title>TEST</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="aframe/aframe.js"></script>
 </head>
 
 <body>
-  <a-scene>
-    <!--The Assets-->
-    <a-assets>
-        <img id="sky1" src="Cafe 360.jpg">
-        <img id="sky2" src="test.jpg">
-    </a-assets>
 
-    <a-entity id="scene1">
-      <a-sky src="#sky1" rotation="0 -130 0"></a-sky>
-      <a-animation attribute="intensity" begin="aaa" from="0" to="1" delay="100" dur="1000" fill="both"></a-animation>
-   </a-entity>
+  <script>
+  function startTimer() {
+    setInterval(function() {
+      nextimage();
+    }, 3000);
+    var zahl == 0;
 
-   <a-entity id="scene2" visible="false">
-   	<a-sky src="#sky2" rotation="0 -130 0"></a-sky>
-   </a-entity>
+   function nextimage() {
 
-  <script type="text/javascript"> 
-  function setScene1() {
-    document.getElementById('scene1').setAttribute('visible', 'true')
-    document.getElementById('scene2').setAttribute('visible', 'false')
-  }
-   function setScene2() {
-    document.getElementById('scene1').setAttribute('visible', 'false')
-    document.getElementById('scene2').setAttribute('visible', 'true')
-  }
-  </script>
-
+     if (zahl == 0) {
+       $("#skyid").attr("src","#sky2");
+       zahl ++;
+     }
+     if (zahl == 1) {
+       $("#skyid").attr("src","#sky1");  
+       zahl ++;
+     }
+     if (zahl == 2) {
+       zahl == 0;
+     }
+     }
+   }
+      startTimer()
+    
+  </script>   
+    
+<a-scene>
+  <a-sky id="#sky1" src="Cafe 360.jpg" rotation="0 -130 0"></a-sky>
+  <a-sky id="#sky2" src="test.jpg" rotation="0 -130 0"></a-sky>
+</a-scene>
+    
 </body>
 </html
