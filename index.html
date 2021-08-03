@@ -8,37 +8,29 @@
 </head>
 
 <body>
-
-  <script>
-  function startTimer() {
-    setInterval(function() {
-      nextimage();
-    }, 3000);
-    var zahl == 0;
-
-   function nextimage() {
-
-     if (zahl == 0) {
-       $("#skyid").attr("src","#sky2");
-       zahl ++;
-     }
-     if (zahl == 1) {
-       $("#skyid").attr("src","#sky1");  
-       zahl ++;
-     }
-     if (zahl == 2) {
-       zahl == 0;
-     }
-     }
-   }
-      startTimer()
-    
-  </script>   
     
 <a-scene>
   <a-sky id="#sky1" src="Cafe 360.jpg" rotation="0 -130 0"></a-sky>
-  <a-sky id="#sky2" src="test1.gif" rotation="0 -130 0"></a-sky>
+  <a-sky id="#sky2" src="test.jpg" rotation="0 -130 0"></a-sky>
 </a-scene>
+
+<script>
+  function startTimer() {
+    setInterval(function() {
+      nextimage();
+    }, 1500);
+    var zahl == 0;
+    var ids = ["#sky1", "#sky2"]
+
+    function nextimage() {
+    console.log(zahl)
+      $("#skyid").attr("src",ids[zahl])
+      zahl = (zahl < ids.length - 1) ? ++zahl : 0
+    }
+  }
+  startTimer()
+
+</script> 
     
 </body>
 </html
