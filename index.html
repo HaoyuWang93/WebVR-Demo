@@ -2,30 +2,35 @@
 <!doctype html>
 <html>
 <head>
-  <title>TEST3</title>
+  <title>TEST4</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="aframe/aframe.js"></script>
 </head>
 
 <body>
     
-<script>
+<script type = "text/javascript">
   function startTimer() {
     setInterval(function() {
       nextimage();
-    }, 5000);
+    }, 3000);
     var zahl == 0;
-    var imageSource = ["Cafe 360.jpg", "test.jpg"]
 
     function nextimage() {
-    console.log(zahl)
-      $("sky1").attr("src",imageSource[zahl])
-      zahl == (zahl < imageSource.length - 1) ? ++zahl : 0
-    }
-  }
-  startTimer()
-
-</script> 
+if (zahl == 0) {
+       $("#skyid").attr("src","sky1");
+       zahl ++;
+     }
+     if (zahl == 1) {
+       $("#skyid").attr("src","sky2");  
+       zahl ++;
+     }
+     if (zahl == 2) {
+       zahl == 0;
+     }
+     }
+   }
+  </script>   
 <a-scene>
   <a-sky id="sky1" src="Cafe 360.jpg"></a-sky>
   <a-sky id="sky2" src="test.jpg"></a-sky>
