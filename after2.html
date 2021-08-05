@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>BOS-10/24/2045</title>
+</head>
+
+<body>
+
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</script>
+    <div style='position: fixed;
+    top: 15px;
+    left: 20px;
+    width:100%;
+    text-align: left;
+    z-index: 1;'>
+      <a href="after1.html"><button>PREVIOUS</button></a>
+	</div>
+
+</script>
+    <div style='position: fixed;
+    top: 15px;
+    left: 110px;
+    width:100%;
+    text-align: left;
+    z-index: 1;'>
+      <a href="after2.html"><button>NEXT</button></a>
+	</div>
+
+</script>
+    <div style='position: fixed;
+    bottom: 25px;
+    left: 20px;
+    width:100%;
+    text-align: left;
+    z-index: 1;'>
+      <a href="https://haoyuwang93.github.io/afuture/"><button>HOME</button></a>
+	</div>
+
+  <script>
+    function startTimer() {
+      setInterval(function() {
+        nextimage();
+      }, 2000);
+      var zahl = 0;
+      var srcs = ["images/after2.jpg", "images/after2-1.jpg"]
+
+      function nextimage() {
+      console.log(zahl)
+        $("#skyid").attr("src", srcs[zahl])
+        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
+      }
+    }
+    startTimer()
+
+  </script>
+  <a-scene>
+    <a-sky id="skyid" src="images/after2.jpg"></a-sky>
+  </a-scene>
+
+
+</body>
+</html
