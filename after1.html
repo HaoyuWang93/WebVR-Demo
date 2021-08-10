@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>BOS-08/18/2045</title>
+  <title>BOS-07/29/2045</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     width:100%;
     text-align: left;
     z-index: 1;'>
-      <a href="index.html"><button>PREVIOUS</button></a>
+      <a href="summer.html"><button>PREVIOUS</button></a>
 	</div>
 
 </script>
@@ -40,9 +40,26 @@
       <a href="https://haoyuwang93.github.io/afuture/"><button>HOME</button></a>
 	</div>
 
-<a-scene>
-  <a-sky id="skyid" src="images/after1.jpg"></a-sky>
-</a-scene>
+  <script>
+    function startTimer() {
+      setInterval(function() {
+        nextimage();
+      }, 2500);
+      var zahl = 0;
+      var srcs = ["images/after1.jpg", "images/after1-1.jpg"]
+
+      function nextimage() {
+      console.log(zahl)
+        $("#skyid").attr("src", srcs[zahl])
+        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
+      }
+    }
+    startTimer()
+
+  </script>
+  <a-scene>
+    <a-sky id="skyid" src="images/after1.jpg"></a-sky>
+  </a-scene>
 
 </body>
 </html

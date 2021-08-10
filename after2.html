@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>BOS-10/24/2045</title>
+  <title>BOS-10/20/2045</title>
 </head>
 
 <body>
@@ -39,22 +39,6 @@
     z-index: 1;'>
       <a href="https://haoyuwang93.github.io/afuture/"><button>HOME</button></a>
 	</div>
-
-  <script>
-    function startTimer() {
-      setInterval(function() {
-        nextimage();
-      }, 2000);
-      var zahl = 0;
-      var srcs = ["images/after2.jpg", "images/after2-1.jpg"]
-
-      function nextimage() {
-      console.log(zahl)
-        $("#skyid").attr("src", srcs[zahl])
-        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
-      }
-    }
-    startTimer()
 
   </script>
   <a-scene>
