@@ -3,42 +3,39 @@
 <html>
 <head>
   <title>BOS-04/16/2045</title>
+<script src="aframe/aframe.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/custom.css">
+
+<div style='position: fixed;
+top: 15px;
+left: 20px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="before1.html"><button class="button">PREVIOUS</button></a>
+</div>
+
+<div style='position: fixed;
+top: 15px;
+left: 140px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="summer.html"><button class="button">NEXT</button></a>
+</div>
+
+<div style='position: fixed;
+bottom: 15px;
+left: 20px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="https://haoyuwang93.github.io/afuture/"><button class="button">HOME</button></a>
+</div>
 </head>
 
 <body>
-
-<script src="aframe/aframe.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-</script>
-    <div style='position: fixed;
-    top: 15px;
-    left: 20px;
-    width:100%;
-    text-align: left;
-    z-index: 1;'>
-      <a href="before1.html"><button>PREVIOUS</button></a>
-	</div>
-
-</script>
-    <div style='position: fixed;
-    top: 15px;
-    left: 110px;
-    width:100%;
-    text-align: left;
-    z-index: 1;'>
-      <a href="summer.html"><button>NEXT</button></a>
-	</div>
-
-</script>
-    <div style='position: fixed;
-    bottom: 25px;
-    left: 20px;
-    width:100%;
-    text-align: left;
-    z-index: 1;'>
-      <a href="https://haoyuwang93.github.io/afuture/"><button>HOME</button></a>
-	</div>
 
 <a-scene>
   <a-sky id="skyid" src="images/before2.jpg" rotation="0 90 0"></a-sky>
@@ -49,8 +46,9 @@
     line-height=55
     align=center
     width="5"
-    position="0 -1 -4"
+    position="0 -1 -2"
     rotation="-90 0 0"></a-text>
+
     <a-text
       value="...as a digital worker, I might be too arrogant living among waged commuters
       in this COVID-saturated neighborhood.
@@ -60,13 +58,14 @@
       width="5"
       position="-4 2.8 0"
       rotation="0 90 0"></a-text>
+
     <a-text
       value="...I sometimes feel nostalgic
       when looking at nomads' return
       to those campus towers
       as the winter ends.
 
-      Sam's probably right
+      Mia's probably right
       that I don't belong here..."
       line-height=55
       color=black

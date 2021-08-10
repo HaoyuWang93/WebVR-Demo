@@ -3,33 +3,8 @@
 <html>
 <head>
   <title>BOS-04/16/2045</title>
-</head>
-
-<body>
-
 <script src="aframe/aframe.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-</script>
-    <div style='position: fixed;
-    top: 15px;
-    left: 20px;
-    width:100%;
-    text-align: left;
-    z-index: 1;'>
-      <a href="before1.html"><button>NEXT</button></a>
-	</div>
-
-</script>
-    <div style='position: fixed;
-    bottom: 25px;
-    left: 20px;
-    width:100%;
-    text-align: left;
-    z-index: 1;'>
-      <a href="https://haoyuwang93.github.io/afuture/"><button>HOME</button></a>
-	</div>
-
 <script>
   function startTimer() {
     setInterval(function() {
@@ -45,8 +20,31 @@
     }
   }
   startTimer()
-
 </script>
+<link rel="stylesheet" href="css/custom.css">
+
+<div style='position: fixed;
+top: 15px;
+left: 20px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="before1.html"><button class="button">NEXT</button></a>
+</div>
+
+<div style='position: fixed;
+bottom: 15px;
+left: 20px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="https://haoyuwang93.github.io/afuture/"><button class="button">HOME</button></a>
+</div>
+
+</head>
+
+<body>
+
 <a-scene>
   <a-sky id="skyid" src="images/before1.jpg"></a-sky>
 </a-scene>
