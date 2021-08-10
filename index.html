@@ -7,7 +7,7 @@
 
 <body>
 
-<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="aframe/aframe.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </script>
@@ -17,17 +17,7 @@
     width:100%;
     text-align: left;
     z-index: 1;'>
-      <a href="index.html"><button>PREVIOUS</button></a>
-	</div>
-
-</script>
-    <div style='position: fixed;
-    top: 15px;
-    left: 110px;
-    width:100%;
-    text-align: left;
-    z-index: 1;'>
-      <a href="after1.html"><button>NEXT</button></a>
+      <a href="before1.html"><button>NEXT</button></a>
 	</div>
 
 </script>
@@ -44,9 +34,9 @@
   function startTimer() {
     setInterval(function() {
       nextimage();
-    }, 4000);
+    }, 5000);
     var zahl = 0;
-    var srcs = ["images/before1.jpg", "images/before2.jpg"]
+    var srcs = ["images/before1.jpg", "images/before1-1.jpg"]
 
     function nextimage() {
     console.log(zahl)
