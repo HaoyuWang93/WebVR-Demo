@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>BOS-07/29/2045</title>
+
+<script src="aframe/aframe.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/custom.css">
+
+<div style='position: fixed;
+top: 15px;
+left: 20px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="after3.html"><button class="button">PREVIOUS</button></a>
+</div>
+
+<div style='position: fixed;
+top: 15px;
+left: 140px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="leave.html"><button class="button">NEXT</button></a>
+</div>
+
+<div style='position: fixed;
+bottom: 15px;
+left: 20px;
+width:100%;
+text-align: left;
+z-index: 1;'>
+  <a href="https://haoyuwang93.github.io/afuture/"><button class="button">HOME</button></a>
+</div>
+
+  <script>
+    function startTimer() {
+      setInterval(function() {
+        nextimage();
+      }, 2500);
+      var zahl = 0;
+      var srcs = ["images/after4.jpg", "images/after4-1.jpg"]
+
+      function nextimage() {
+      console.log(zahl)
+        $("#skyid").attr("src", srcs[zahl])
+        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
+      }
+    }
+    startTimer()
+
+  </script>
+</head>
+
+<body>
+
+  <a-scene>
+    <a-sky id="skyid" src="images/after4.jpg" rotation="0 -90 0"></a-sky>
+    <a-text
+      value="...there are only a few lights left across the alley...
+          ...hard to imagine how onsite workers go through this...
+          ...what are they doing inside their ports?
+          ...they no longer message me for fake PASS IDs...
+          ...will digital work be their last hope for a future?
+          ...but this future will need no more than 1% of them...
+          ...how do they think about those campus towers above?"
+      line-height=55
+      align=center
+      width="1.2"
+      position="0 1 -0.8"
+      rotation="-90 0 0"></a-text>
+  </a-scene>
+
+</body>
+</html
