@@ -1,34 +1,17 @@
 custom.css
 <TEXT>
 
-/* GLOBAL STYLES */
-body {
-  background: black;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
+/* Dialogues */
+.more {
+  animation: fadein 2s steps(1, end);
 }
 
-/* DEMO-SPECIFIC STYLES */
-.typemia p {
-  color: #7FFFD4;
-  font-family: monospace;
-  font-size: 18px;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
+/*button style */
 .button {
   background-color: #F5F5F5;
   border-style: double;

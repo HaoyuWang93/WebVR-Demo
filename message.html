@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>BOS-09/21/2045</title>
+  <title>BOS-09/12/2045</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/custom.css">
 
@@ -22,7 +22,7 @@
   width:100%;
   text-align: left;
   z-index: 1;'>
-    <a href="video.html"><button class="button">NEXT</button></a>
+    <a href="delivery.html"><button class="button">NEXT</button></a>
   </div>
 
   <div style='position: fixed;
@@ -34,32 +34,114 @@
     <a href="https://haoyuwang93.github.io/afuture/"><button class="button">HOME</button></a>
   </div>
 
-  <style>
-  #head {
-    position: fixed;
-    top: 50px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    line-height: 2;
-    font-size: 18px;
-    color: #33FFC1;
-    text-align: center;
-  }
-  </style>
-
   <h1 id="head">[ENCRYPTED MESSAGE]<br>
-  09/21/2045</h1>
-
+  09/12/2045</h1>
 
 </head>
 
 <body>
   <body style="background-color:black;">
 
-<div id="typemia">
-  <p>I just came back to my Boston campus</p>
-</div>
+  <div class="more"><p id="mia">[ ]: i just came back to bos campus</p></div>
+  <div class="more2"><p id="mia">[ ]: was trying to connect on holo</p></div>
+  <div style='position:fixed;bottom:60px;width:100%;text-align:center;'
+  class="more2"><button onclick="unhide();hidbutton()" class="reply" id="reply">REPLY</button>
+  </div>
+  <div class="exp"><p id="me">ye sorry, I have to keep this anonymous.</p></div>
+  <div class="more"><p id="mia">[ ]: i saw the port thing on news</p></div>
+  <div class="exp more2"><p id="mia">[ ]: ud better quit reselling covid blockers</p></div>
+  <div class="exp more3"><p id="mia">[ ]: never know if it sees inside packages</p></div>
+
+<style>
+#head {
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  font-size: 18px;
+  color: #33FFC1;
+  text-align: center;
+}
+#mia {
+position: relative;
+top:120px;
+left:20px;
+line-height: 1.5;
+font-size: 18px;
+color: #33FFC1;
+text-align: left;
+}
+#me {
+position: relative;
+top:120px;
+right:20px;
+line-height: 1.5;
+font-size: 18px;
+color: white;
+text-align: right;
+}
+
+.exp{visibility: hidden;}
+
+.more {
+  animation: fadein 1s steps(1, end);
+}
+.more2 {
+  animation: fadein 2s steps(1, end);
+}
+.more3 {
+  animation: fadein 3s steps(1, end);
+}
+.more4 {
+  animation: fadein 4s steps(1, end);
+}
+.more5 {
+  animation: fadein 5s steps(1, end);
+}
+.more6 {
+  animation: fadein 6s steps(1, end);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.reply {
+  background-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: white;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;'
+}
+</style>
+
+<script>
+var hidden = false;
+function hidbutton() {
+    hidden = !hidden;
+    if(hidden) {
+        document.getElementById('reply').style.visibility = 'hidden';
+    } else {
+        document.getElementById('reply').style.visibility = 'visible';
+    }
+}
+
+function unhide() {
+   var hid = document.getElementsByClassName("exp");
+   if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+       hid[0].style.visibility = "visible";}
+    }
+
+</script>
 
 </body>
 </html
