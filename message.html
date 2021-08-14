@@ -51,10 +51,11 @@
 <body>
 
   <body style="background-color:black;
-  padding-bottom: 50px;">
+  padding-bottom: 15vh;">
 
     <button id="login">JOIN CHAT</button>
 
+<div id= "messages">
   <div class="hide" id="mia1"><p id="chat-fr">[ ]: i just came back to the bos campus</p></div>
   <div class="hide" id="mia2"><p id="chat-fr">[ ]: was trying to connect on holo</p></div>
       <div class="hide" id="buttonre"><button id="reply">REPLY</button></div>
@@ -99,6 +100,7 @@
   <div class="hide" id="mia20"><p id="chat-fr">[ ]: i can assure u that ppl r far more interested in ur online tracks</p></div>
   <div class="hide" id="mia21"><p id="chat-fr">[ ]: than useless mappings about ur physical activities on campus</p></div>
   <div class="hide" id="end"><br><p style="text-align: center" id="chat-fr">[@ID=[ENCRYPTED] is offline]<br></p></div>
+</div>
 
 <script>
 
@@ -259,6 +261,12 @@ $(document).ready(function() {
 else $("#re12,#re13,#re14,#mia18,#mia19,#mia20,#mia21,#end").toggleClass("hide");
   });
 });
+
+$(document).ready(function() {
+            $(".hide").click(function() {
+                $(document).scrollTop($(document).height());
+            });
+        });
 
 </script>
 
