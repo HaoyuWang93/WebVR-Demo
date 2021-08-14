@@ -2,54 +2,38 @@ custom.css
 <TEXT>
 
 /* Dialogues */
-.delay {
-  animation: fadein 1s steps(1, end);
-}
-.d1 {animation-delay:1s}
-.d2 {animation-delay:2s}
-.d3 {animation-delay:3s}
-.d4 {animation-delay:4s}
-.d5 {animation-delay:5s}
-.d6 {animation-delay:6s}
-
-.animate {
-  animation-duration: 5s;
-  animation-name: faein;
+#chat-title {
+  position:relative;
+  top:60px;
+  left:50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  font-size: 20px;
+  color: #33FFC1;
+  text-align:center;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-#chat-head {
-position: fixed;
-top: 75px;
-left: 50%;
-margin-right: -50%;
-transform: translate(-50%, -50%);
-line-height: 2;
-font-size: 18px;
-color: #33FFC1;
-text-align: center;
-}
 #chat-fr {
 position: relative;
-top:120px;
-left:20px;
-line-height: 1.5;
+top:80px;
+left:80px;
+line-height: 1;
 font-size: 18px;
 color: #33FFC1;
 text-align: left;
+margin-right: 30%;
 }
+
 #chat-re {
 position: relative;
-top:120px;
-right:20px;
-line-height: 1.5;
+top:80px;
+right:80px;
+line-height: 1;
 font-size: 18px;
 color: white;
 text-align: right;
+margin-left:30%;
 }
 
 /*button style */
@@ -82,10 +66,8 @@ text-align: right;
   margin: 4px 2px;
   cursor: pointer;
   position:fixed;
-  bottom:60px;
-  left:50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  top:80px;
+  right:80px;
 }
 
 #login {
@@ -106,4 +88,31 @@ text-align: right;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+/* texts */
+#monograph {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  font-size: 24px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+#video-sub {
+  position: fixed;
+  bottom:0px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  font-size: 18px;
+  color: white;
+  font-style: italic;
+  text-align: center;
 }
