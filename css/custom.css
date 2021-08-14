@@ -3,23 +3,23 @@ custom.css
 
 /* Dialogues */
 #chat-title {
-  position:relative;
-  top:60px;
-  left:50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  line-height: 2;
-  font-size: 20px;
-  color: #33FFC1;
-  text-align:center;
+position:relative;
+top:8vh;
+left:50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+line-height: 2;
+font-size: 4vw;
+color: #33FFC1;
+text-align:center;
 }
 
 #chat-fr {
 position: relative;
-top:80px;
-left:80px;
-line-height: 1;
-font-size: 18px;
+top:8vh;
+left:5vw;
+line-height: 1.5;
+font-size: 3vmin;
 color: #33FFC1;
 text-align: left;
 margin-right: 30%;
@@ -27,10 +27,10 @@ margin-right: 30%;
 
 #chat-re {
 position: relative;
-top:80px;
-right:80px;
-line-height: 1;
-font-size: 18px;
+top:8vh;
+right:5vw;
+line-height: 1.5;
+font-size: 3vmin;
 color: white;
 text-align: right;
 margin-left:30%;
@@ -58,16 +58,16 @@ margin-left:30%;
   border-radius: 8px;
   border-color: white;
   color: white;
-  padding: 10px 16px;
+  padding: 8px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
-  margin: 4px 2px;
+  font-size: 16px;
+  margin: 2px 2px;
   cursor: pointer;
   position:fixed;
-  top:80px;
-  right:80px;
+  top:60px;
+  right:20px;
 }
 
 #login {
@@ -76,12 +76,12 @@ margin-left:30%;
   border-radius: 8px;
   border-color: white;
   color: white;
-  padding: 10px 16px;
+  padding: 8px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
-  margin: 4px 2px;
+  font-size: 16px;
+  margin: 2px 2px;
   cursor: pointer;
   position:fixed;
   top: 50%;
@@ -98,7 +98,7 @@ margin-left:30%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   line-height: 2;
-  font-size: 24px;
+  font-size: 3vmin;
   color: white;
   font-style: italic;
   text-align: center;
@@ -111,7 +111,7 @@ margin-left:30%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   line-height: 2;
-  font-size: 18px;
+  font-size: 3vmin;
   color: white;
   font-style: italic;
   text-align: center;
