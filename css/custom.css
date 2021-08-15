@@ -1,6 +1,24 @@
 custom.css
 <TEXT>
 
+/* Global */
+body {
+    background: black;
+}
+#wrapper-dialogues {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    padding: 10px;
+    width: 90%;
+    max-width:800px;
+    height:75%;
+    overflow:scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
 /* Dialogues */
 #chat-title {
 position:relative;
@@ -16,24 +34,23 @@ text-align:center;
 
 #chat-fr {
 position: relative;
-top:8vh;
-left:5vw;
+top:1vh;
 line-height: 1.5;
-font-size: 3vmin;
+font-size: 18px;
 color: #33FFC1;
+font-style: italic;
 text-align: left;
-margin-right: 30%;
+margin-right: 25%;
 }
 
 #chat-re {
 position: relative;
-top:8vh;
-right:5vw;
+top:1vh;
 line-height: 1.5;
-font-size: 3vmin;
+font-size: 18px;
 color: white;
 text-align: right;
-margin-left:30%;
+margin-left:25%;
 }
 
 /*button style */
@@ -41,9 +58,9 @@ margin-left:30%;
   background-color: #F5F5F5;
   border-style: double;
   border-radius: 8px;
-  border-color: #696969;
+  border-color: black;
   color: black;
-  padding: 4px 4px;
+  padding: 6px 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -66,8 +83,10 @@ margin-left:30%;
   margin: 2px 2px;
   cursor: pointer;
   position:fixed;
-  top:60px;
-  right:20px;
+  bottom:45px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 #login {
@@ -81,10 +100,11 @@ margin-left:30%;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  line-height:1.5;
   margin: 2px 2px;
   cursor: pointer;
   position:fixed;
-  top: 50%;
+  top:50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -98,21 +118,23 @@ margin-left:30%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   line-height: 2;
-  font-size: 3vmin;
+  font-size: 18px;
   color: white;
   font-style: italic;
   text-align: center;
+  padding:10px;
 }
 
 #video-sub {
   position: fixed;
-  bottom:0px;
+  top:80%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  line-height: 2;
-  font-size: 3vmin;
+  line-height: 1.5;
+  font-size: 16px;
   color: white;
   font-style: italic;
   text-align: center;
+  padding:10px;
 }

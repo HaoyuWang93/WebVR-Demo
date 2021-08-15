@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>BOS-07/29/2045</title>
+  <title>BOS-10/24/2045</title>
 
 <script src="aframe/aframe.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,7 +14,7 @@ left: 20px;
 width:100%;
 text-align: left;
 z-index: 1;'>
-  <a href="before2.html"><button class="button">PREVIOUS</button></a>
+  <a href="9-omega.html"><button class="button">PREVIOUS</button></a>
 </div>
 
 <div style='position: fixed;
@@ -23,7 +23,7 @@ left: 120px;
 width:100%;
 text-align: left;
 z-index: 1;'>
-  <a href="message.html"><button class="button">NEXT</button></a>
+  <a href="11-after4.html"><button class="button">NEXT</button></a>
 </div>
 
 <div style='position: fixed;
@@ -39,9 +39,9 @@ z-index: 1;'>
     function startTimer() {
       setInterval(function() {
         nextimage();
-      }, 2500);
+      }, 2000);
       var zahl = 0;
-      var srcs = ["images/after1.jpg", "images/after1-1.jpg"]
+      var srcs = ["images/after3.jpg", "images/after3-1.jpg"]
 
       function nextimage() {
       console.log(zahl)
@@ -57,16 +57,15 @@ z-index: 1;'>
 <body>
 
   <a-scene>
-    <a-sky id="skyid" src="images/after1.jpg"></a-sky>
+    <a-sky id="skyid" src="images/after3.jpg" rotation="0 -30 0"></a-sky>
     <a-text
-      value="Here it comes!
-      Now Uber and Amazon are officially part of
-      the public health system..."
+      value="what the hell...
+      looks like I have another decoding work to do"
       line-height=55
       align=center
-      width="3"
-      position="-0.2 0 -3"
-      rotation="-90 0 0"></a-text>
+      width="2.5"
+      position="-0.4 2.6 -2"
+      rotation="90 60 0"></a-text>
   </a-scene>
 
 </body>
