@@ -157,3 +157,18 @@ margin-left:25%;
   text-align: center;
   padding:10px;
 }
+
+/* Media */
+.video {
+  position:fixed;
+    width:80%; height:auto;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 600px) {
+  .video {
+    top: 42%;
+    width:auto; height: 70%;
+  }
