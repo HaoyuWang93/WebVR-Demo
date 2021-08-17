@@ -9,11 +9,11 @@ body {
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -60%);
     padding: 10px;
     width: 90%;
     max-width:800px;
-    height:75%;
+    height:60%;
     overflow:scroll;
     overflow-x: hidden;
   }
@@ -39,17 +39,6 @@ body {
 }
 
 /* Dialogues */
-#chat-title {
-position:relative;
-top:8vh;
-left:50%;
-margin-right: -50%;
-transform: translate(-50%, -50%);
-line-height: 2;
-font-size: 4vw;
-color: #33FFC1;
-text-align:center;
-}
 
 #chat-fr {
 position: relative;
@@ -102,10 +91,11 @@ margin-left:25%;
   margin: 2px 2px;
   cursor: pointer;
   position:fixed;
-  bottom:45px;
+  bottom:15%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  z-index:999;
 }
 
 #login {
@@ -123,10 +113,11 @@ margin-left:25%;
   margin: 2px 2px;
   cursor: pointer;
   position:fixed;
-  top:50%;
+  top:60%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  z-index:999;
 }
 
 /* texts */
