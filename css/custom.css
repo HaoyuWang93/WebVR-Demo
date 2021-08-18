@@ -163,3 +163,8 @@ margin-left:25%;
     top: 42%;
     width:auto; height: 70%;
   }
+
+/* hidden ar button */
+div.a-enter-vr {
+  visibility: hidden;
+}
