@@ -137,7 +137,7 @@ margin-left:25%;
 
 #video-sub {
   position: fixed;
-  top:80%;
+  top:85%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -160,11 +160,11 @@ margin-left:25%;
 }
 @media screen and (max-width: 600px) {
   .video {
-    top: 42%;
+    top: 45%;
     width:auto; height: 70%;
   }
 
 /* hidden ar button */
-div.a-enter-vr {
+div.a-enter-ar {
   visibility: hidden;
 }
