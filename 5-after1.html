@@ -7,6 +7,7 @@
 <script src="aframe/aframe.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="css/custom.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div style='position: fixed;
 bottom: 15px;
@@ -39,7 +40,7 @@ z-index: 1;'>
     function startTimer() {
       setInterval(function() {
         nextimage();
-      }, 2500);
+      }, 2000);
       var zahl = 0;
       var srcs = ["images/after1.jpg", "images/after1-1.jpg"]
 
@@ -60,12 +61,11 @@ z-index: 1;'>
     <a-sky id="skyid" src="images/after1.jpg"></a-sky>
     <a-text
       value="Here it comes!
-      Now Uber and Amazon are officially part of
-      the public health system..."
+      Once again, my connection to the city lies on drone services..."
       line-height=55
       align=center
       width="3"
-      position="-0.2 0 -3"
+      position="-0.2 0 -2"
       rotation="-90 0 0"></a-text>
   </a-scene>
 
