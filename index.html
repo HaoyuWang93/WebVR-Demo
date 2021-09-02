@@ -8,24 +8,6 @@
 <link rel="stylesheet" href="css/custom.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script>
-  function startTimer() {
-    setInterval(function() {
-      nextimage();
-    }, 3500);
-    var zahl = 0;
-    var srcs = ["images/before1.jpg", "images/before1-1.jpg"]
-
-    function nextimage() {
-    console.log(zahl)
-      $("#skyid").attr("src", srcs[zahl])
-      zahl = (zahl < srcs.length - 1) ? ++zahl : 0
-    }
-  }
-  startTimer()
-</script>
-<link rel="stylesheet" href="css/custom.css">
-
 <div style='position: fixed;
 bottom: 15px;
 left: 20px;
@@ -48,9 +30,31 @@ z-index: 1;'>
 
 <body>
 
+<a-asset>
+      <img id="before1" src="images/before1.jpg">
+      <img id="before1-1" src="images/before1-1.jpg">
+</a-asset>
+
 <a-scene vr-mode-ui="arEnabled:false" loading-screen="dotsColor: white; backgroundColor: black">
-  <a-sky id="skyid" src="images/before1.jpg"></a-sky>
+  <a-sky id="skyid" src="#before1"></a-sky>
 </a-scene>
+
+<script>
+  function startTimer() {
+    setInterval(function() {
+      nextimage();
+    }, 3500);
+    var zahl = 0;
+    var srcs = ["#before1", "#before1-1"]
+
+    function nextimage() {
+    console.log(zahl)
+      $("#skyid").attr("src", srcs[zahl])
+      zahl = (zahl < srcs.length - 1) ? ++zahl : 0
+    }
+  }
+  startTimer()
+</script>
 
 </body>
 </html

@@ -36,29 +36,16 @@ z-index: 1;'>
   <a href="https://haoyuwang93.github.io/anotherfuture/"><button class="button">HOME</button></a>
 </div>
 
-  <script>
-    function startTimer() {
-      setInterval(function() {
-        nextimage();
-      }, 2000);
-      var zahl = 0;
-      var srcs = ["images/after3.jpg", "images/after3-1.jpg"]
-
-      function nextimage() {
-      console.log(zahl)
-        $("#skyid").attr("src", srcs[zahl])
-        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
-      }
-    }
-    startTimer()
-
-  </script>
 </head>
 
 <body>
+  <a-asset>
+      <img id="after3" src="images/after3.jpg">
+      <img id="after3-1" src="images/after3-1.jpg">
+  </a-asset>
 
 <a-scene vr-mode-ui="arEnabled:false" loading-screen="dotsColor: white; backgroundColor: black">
-    <a-sky id="skyid" src="images/after3.jpg" rotation="0 -30 0"></a-sky>
+    <a-sky id="skyid" src="#after3" rotation="0 -30 0"></a-sky>
     <a-text
       value="what the hell...
       looks like I have another decoding work to do"
@@ -68,6 +55,23 @@ z-index: 1;'>
       position="-0.5 2.6 -1.8"
       rotation="90 60 0"></a-text>
   </a-scene>
+
+  <script>
+    function startTimer() {
+      setInterval(function() {
+        nextimage();
+      }, 2000);
+      var zahl = 0;
+      var srcs = ["#after3", "#after3-1"]
+
+      function nextimage() {
+      console.log(zahl)
+        $("#skyid").attr("src", srcs[zahl])
+        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
+      }
+    }
+    startTimer()
+  </script>
 
 </body>
 </html

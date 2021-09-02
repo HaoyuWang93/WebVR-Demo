@@ -36,29 +36,16 @@ z-index: 1;'>
   <a href="https://haoyuwang93.github.io/anotherfuture/"><button class="button">HOME</button></a>
 </div>
 
-  <script>
-    function startTimer() {
-      setInterval(function() {
-        nextimage();
-      }, 2000);
-      var zahl = 0;
-      var srcs = ["images/after1.jpg", "images/after1-1.jpg"]
-
-      function nextimage() {
-      console.log(zahl)
-        $("#skyid").attr("src", srcs[zahl])
-        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
-      }
-    }
-    startTimer()
-
-  </script>
 </head>
 
 <body>
+<a-asset>
+    <img id="after1" src="images/after1.jpg">
+    <img id="after1-1" src="images/after1-1.jpg">
+</a-asset>
 
 <a-scene vr-mode-ui="arEnabled:false" loading-screen="dotsColor: white; backgroundColor: black">
-    <a-sky id="skyid" src="images/after1.jpg"></a-sky>
+    <a-sky id="skyid" src="#after1"></a-sky>
     <a-text
       value="Here it comes!
       Once again, the city goes behind drone services..."
@@ -68,6 +55,23 @@ z-index: 1;'>
       position="-0.2 0 -2"
       rotation="-90 0 0"></a-text>
   </a-scene>
+
+  <script>
+    function startTimer() {
+      setInterval(function() {
+        nextimage();
+      }, 2000);
+      var zahl = 0;
+      var srcs = ["#after1", "#after1-1"]
+
+      function nextimage() {
+      console.log(zahl)
+        $("#skyid").attr("src", srcs[zahl])
+        zahl = (zahl < srcs.length - 1) ? ++zahl : 0
+      }
+    }
+    startTimer()
+  </script>
 
 </body>
 </html
