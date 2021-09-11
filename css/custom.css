@@ -163,16 +163,16 @@ margin-left:25%;
 
 @media screen and (max-width: 600px) {
   #monograph {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   #video-sub {
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
   #chat-fr {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   #chat-re {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .video {
     top: 45%;
