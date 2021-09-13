@@ -161,7 +161,7 @@ margin-left:25%;
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #monograph {
     font-size: 1.2em;
   }
@@ -178,6 +178,24 @@ margin-left:25%;
     top: 45%;
     width:auto; height: 70%;
   }
+
+  @media screen and (max-width: 350px) {
+    #monograph {
+      font-size: 1em;
+    }
+    #video-sub {
+      font-size: 1em;
+    }
+    #chat-fr {
+      font-size: 1em;
+    }
+    #chat-re {
+      font-size: 1em;
+    }
+    .video {
+      top: 45%;
+      width:auto; height: 70%;
+    }
 
 /* hidden ar button */
 div.a-enter-ar {
